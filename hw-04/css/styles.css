@@ -38,6 +38,7 @@ color: #1abc9c;
 }
 
 .site-logo {
+    float: left;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
