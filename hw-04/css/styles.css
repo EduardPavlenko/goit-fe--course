@@ -15,9 +15,8 @@
 }
 
 .container {
-    width: 1111px;
+    width: 1110px;
     margin: 0 auto;
-    padding: 38px 30px 36px;
 }
 
 .site-navigation {
@@ -28,7 +27,7 @@
 
 .site-navigation li:hover {
     cursor: pointer;
-color: #1abc9c;
+    color: #1abc9c;
 }
 
 .clearfix::after {
@@ -67,14 +66,16 @@ h2 {
     text-align: center;
     margin: 0;
 }
-
+.products-title {
+    margin-bottom: 92px;
+}
 h2::after {
     content: "";
     display: block;
     background-color: #4ec6ab;
     width: 164px;
     height: 7px;
-    margin: 32px auto 92px;
+    margin: 32px auto;
 }
 
 .products-list {
@@ -84,12 +85,16 @@ h2::after {
 
 .products-list li {
     float: left;
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
     font-size: 0;
 }
 
 .products-list li:nth-child(4n + 4) {
     margin-right: 0;
+}
+
+.products-list li:nth-child(n + 5) {
+    margin-bottom: 0;
 }
 
 .products-list-item {
@@ -108,6 +113,10 @@ h2::after {
     margin: 0;
 }
 
+a {
+    display: block;
+}
+
 .product-name {
     background-color: #323232;
     box-sizing: border-box;
@@ -116,9 +125,13 @@ h2::after {
     padding-left: 13px;
 }
 
-.product-name:hover {
-cursor: pointer;
-background-color: #1abc9c;
+.products-list-item:hover .product-name {
+    cursor: pointer;
+    background-color: #1abc9c;
+}
+    .products-list-item:hover .product-price {
+    cursor: pointer;
+    background-color: #7fd9c7;
 }
 
 .product-price {
@@ -128,17 +141,12 @@ background-color: #1abc9c;
     text-align: center;
 }
 
-.product-price:hover {
-    cursor: pointer;
-    background-color: #7fd9c7;
-}
-
 .product-img:hover {
     cursor: pointer;
 }
 
 .news-paragraph-1 {
-    margin: 0;
+    margin: 0 0 26px;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -160,24 +168,27 @@ background-color: #1abc9c;
 .page-button {
     width: 160px;
     height: 51px;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
+    text-decoration: none;
     color: #f3fbf9;
     background-color: #4ec6ab;
     border: 0;
-    margin-bottom: 46px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-button:hover {
     cursor: pointer;
     background-color: #7edac5;
-    }
+}
 
 .page-header {
-    padding: 0 0 111px;
+    padding: 37px 0 111px;
 }
 
 .products {
@@ -217,12 +228,18 @@ margin-bottom: 80px;
     margin-bottom: 14px;
 }
 
+.news {
+    padding-bottom: 46px;
+}
+
+
+
 .news-paragraph-1::after {
     content: "";
     display: block;
     background-color: #4ec6ab;
     width: 136px;
     height: 3px;
-    margin: 11px 0 24px;
+    margin: 11px 0 0;
 }
 
